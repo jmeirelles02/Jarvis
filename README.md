@@ -36,15 +36,6 @@ python -m http.server 8000
 python -m SimpleHTTPServer 8000
 ```
 
-#### Se você tem o Live Server (VS Code):
-1. Abra a pasta do projeto no VS Code
-2. Instale a extensão "Live Server"
-3. Clique com o botão direito no arquivo `index.html`
-4. Selecione "Open with Live Server"
-
-Depois de rodar qualquer um desses comandos, abra seu navegador e vá para:
-**http://localhost:8000**
-
 ## 📱 O que você pode fazer no site
 
 ### 🧮 Calculadora de Juros Compostos
