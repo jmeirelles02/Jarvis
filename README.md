@@ -12,7 +12,7 @@ O Jarvis é como ter um consultor financeiro pessoal no seu computador ou celula
 
 ## 🚀 Como começar a usar
 
-### Opção 1: Abrir diretamente no seu computador (Mais Simples)
+### Opção 1: Abrir diretamente no seu computador
 
 1. **Baixe ou clone este projeto** para uma pasta no seu computador
 2. **Navegue até a pasta** `ConsultorFinanceiro`
@@ -20,9 +20,9 @@ O Jarvis é como ter um consultor financeiro pessoal no seu computador ou celula
 4. **Clique duas vezes** no arquivo `index.html`
 5. **Pronto!** O site abrirá no seu navegador
 
-### Opção 2: Rodar com servidor local (Recomendado)
+### Opção 2: Rodar com servidor local
 
-Para uma experiência completa, é melhor usar um servidor local. Isso garante que todas as funcionalidades funcionem perfeitamente:
+Garante que todas as funcionalidades funcionem perfeitamente:
 
 #### Se você tem Python instalado:
 ```bash
@@ -34,18 +34,6 @@ python -m http.server 8000
 
 # Ou se tiver Python 2
 python -m SimpleHTTPServer 8000
-```
-
-#### Se você tem Node.js instalado:
-```bash
-# Instale o servidor simples globalmente
-npm install -g http-server
-
-# Entre na pasta do projeto
-cd ConsultorFinanceiro/src
-
-# Rode o servidor
-http-server -p 8000
 ```
 
 #### Se você tem o Live Server (VS Code):
