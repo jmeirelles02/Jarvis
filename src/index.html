@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jarvis - Seu consultor financeiro pessoal para investimentos, planejamento e educação financeira">
+    <meta name="keywords" content="consultor financeiro, investimentos, planejamento financeiro, educação financeira">
+    <meta name="author" content="Jarvis Consultoria Financeira">
+    <meta name="theme-color" content="#1B4332">
+    <title>Jarvis - Consultor Financeiro</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Navegação principal">
+            <div class="container">                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Jarvis</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#calculadoras" class="nav-link">Calculadoras</a></li>                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">Transforme suas Finanças</h1>
+                    <p class="hero-subtitle">Consultoria Financeira personalizada para alcançar seus objetivos</p>
+                    <button class="cta-button" onclick="scrollToSection('contato')" aria-describedby="cta-description">
+                        Agende uma Consulta
+                    </button>
+                    <span id="cta-description" class="sr-only">
+                        Clique para agendar uma consulta financeira gratuita
+                    </span>
+                </div>
+            </div>
+        </section>        <section id="servicos" class="services" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h3>Planejamento Financeiro</h3>
+                    <p>Desenvolvemos estratégias personalizadas para organizar suas finanças e alcançar seus objetivos.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Análise de Investimentos</h3>
+                    <p>Avaliamos as melhores opções de investimento adequadas ao seu perfil e metas.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Gestão de Riscos</h3>
+                    <p>Proteja seu patrimônio com estratégias inteligentes de gestão de riscos.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Educação Financeira</h3>
+                    <p>Capacitação para tomar decisões financeiras mais conscientes e assertivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Nós</h2>
+                    <p>Com mais de 10 anos de experiência no mercado financeiro, nossa equipe está preparada para oferecer as melhores soluções em Consultor Financeiro.</p>
+                    <p>Nosso objetivo é democratizar o acesso à educação financeira e ajudar você a conquistar sua independência financeira.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Clientes Atendidos</p>
+                        </div>
+                        <div class="stat">
+                            <h3>R$ 10M+</h3>
+                            <p>Patrimônio Gerenciado</p>
+                        </div>
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p>Satisfação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="calculadoras" class="calculators">
+        <div class="container">
+            <h2 class="section-title">Calculadoras Financeiras</h2>
+            <div class="calculator-card">
+                <h3>Calculadora de Juros Compostos</h3>
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label>Valor Inicial (R$)</label>
+                        <input type="number" id="principal" placeholder="1000">
+                    </div>
+                    <div class="form-group">
+                        <label>Taxa de Juros (% ao mês)</label>
+                        <input type="number" id="rate" placeholder="1">
+                    </div>
+                    <div class="form-group">
+                        <label>Período (meses)</label>
+                        <input type="number" id="time" placeholder="12">
+                    </div>
+                    <div class="form-group">
+                        <label>Aporte Mensal (R$)</label>
+                        <input type="number" id="monthly" placeholder="100">
+                    </div>
+                    <button onclick="calculateCompoundInterest()" class="calc-button">Calcular</button>
+                    <div id="result" class="result"></div>
+                </div>
+            </div>
+            <div class="calculator-card">
+                <h3>Calculadora de Independência Financeira</h3>
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label>Gastos Mensais (R$)</label>
+                        <input type="number" id="monthlyExpenses" placeholder="5000">
+                    </div>
+                    <div class="form-group">
+                        <label>Taxa de Retorno Anual (%)</label>
+                        <input type="number" id="annualReturn" placeholder="8">
+                    </div>
+                    <button onclick="calculateFinancialIndependence()" class="calc-button">Calcular</button>
+                    <div id="independenceResult" class="result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(21) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@Jarvis.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rio de Janeiro - RJ</p>
+                        </div>
+                    </div>
+                </div>                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="contactName">Nome</label>
+                        <input type="text" id="contactName" name="name" placeholder="Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">E-mail</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">Telefone</label>
+                        <input type="tel" id="contactPhone" name="phone" placeholder="Telefone" oninput="phoneMask(this)">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Mensagem</label>
+                        <textarea id="contactMessage" name="message" placeholder="Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jarvis</h3>
+                    <p>Transformando vidas através da educação financeira.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#calculadoras">Calculadoras</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Receba dicas financeiras semanais</p>
+                    <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jarvis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>    <script src="js/utils.js"></script>
+    <script src="js/animacoes.js"></script>
+    <script src="js/calculadoras.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

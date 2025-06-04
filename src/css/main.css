@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'variaveis.css';
+@import 'base.css';
+@import 'layout.css';
+@import 'botoes.css';
+@import 'navegacao.css';
+@import 'forms.css';
+@import 'cartoes.css';
+@import 'secoes.css';
+@import 'footer.css';
+@import 'mensagens.css';
+@import 'componentes.css';
+@import 'animacoes.css';
+@import 'temas.css';
+@import 'performance.css';
+@import 'utils.css';

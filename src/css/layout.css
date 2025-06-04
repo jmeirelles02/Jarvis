@@ -1,0 +1,129 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+    width: 100%;
+}
+.container-fluid {
+    width: 100%;
+    padding: 0 var(--spacing-xl);
+}
+.container-sm {
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+}
+.container-md {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+}
+.container-lg {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+}
+.container-xl {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+}
+.grid {
+    display: grid;
+    gap: var(--spacing-xl);
+}
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.items-center {
+    align-items: center;
+}
+.items-start {
+    align-items: flex-start;
+}
+.items-end {
+    align-items: flex-end;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+.hidden {
+    display: none !important;
+}
+.visible {
+    display: block !important;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+@media (max-width: 768px) {
+    .container,
+    .container-fluid,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        padding: 0 var(--spacing-base);
+    }
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+    .grid-auto {
+        grid-template-columns: 1fr;
+    }
+    .hidden-mobile {
+        display: none !important;
+    }
+    .visible-mobile {
+        display: block !important;
+    }
+}
