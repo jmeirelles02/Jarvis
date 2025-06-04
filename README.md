@@ -1,6 +1,6 @@
 # 💰 Jarvis - Seu Consultor Financeiro Digital
 
-Bem-vindo ao Jarvis. Esse é um projeto feito por um aluno de Ciência de Dados, que se interessa muito por programção e econômia, por esse motivo sempre busco fazer meus projetos mais parecidos com algo relacionado a investimento ou bancos digitais, esse projeto é para meu portfólio, fiz enquanto estudava mais, front-end, ele é foi feito com html, css e javascript puro, sem uso de frameworks ou bibliotecas.
+Bem-vindo ao Jarvis. Esse é um projeto feito por um aluno de Ciência de Dados, que se interessa muito por programção e economia, por esse motivo sempre busco fazer meus projetos mais parecidos com algo relacionado a investimento ou bancos digitais, esse projeto é para meu portfólio, fiz enquanto estudava mais, front-end, ele é foi feito com html, css e javascript puro, sem uso de frameworks ou bibliotecas.
 
 ## 🎯 O que este site faz?
 
